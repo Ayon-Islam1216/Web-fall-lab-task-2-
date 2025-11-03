@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        user input
+    </title>
+</head>
+<body>
+    <form action="" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend><h1>New Patient Registration</h1></legend>
+
+            <label for="username">NAME: </label>
+            <input type="text" id="username" name="username" placeholder="Username" required ><br>
+            <P></P>
+
+            <label for="age">AGE: </label>
+            <input type=" number" id="age" name="age" placeholder="age" required ><br />
+            <p></p>
+
+            <label for="Email">EMAIL: </label>
+            <input type="email" id="email" name="email" placeholder="email" required><br />
+            <p></p>
+
+            <label for="Gender">GENDER: </label>
+            <input type="radio" id="male" name="gender" placeholder="male" required>Male
+            <input type="radio" id="fmale" name="gender" placeholder="fmale" required>Female<br>
+            <p></p>
+           <label for="BLOOD GROUP">BLOOD GROUP:</label>
+           <select id ="Blood Group" name ="Blood Group">
+           <option id="op" value="op">Blood Group</option>
+           <option id="op1" value="op1">O+</option>
+           <option id ="A+" value="A+">A+</option>
+           <option id ="B+" value="B+">B+</option>
+           <option id ="AB+" value="AB+">AB+</option>
+           <option id ="AB-" value="AB-">AB-</option>
+           <option id ="A-" value="A-">A-</option>
+           <option id ="B-" value="B-">B-</option>
+           <option id ="0-" value="0-">O-</option>
+           </select>
+           <br/>
+           <p></p>
+           <label for="disease[]">DISEASE:</label>
+           <input type="checkbox" id="ht" name="disease[]" value="ht">heart disease
+           <input type="checkbox" id="Cancer" name="disease[]" value="Cancer">Cancer
+           <br>
+           <input type="checkbox" id="Accidents" name="disease[]" value="Accidents">Accidents
+           <input type="checkbox" id="Stroke" name="disease[]" value="Stroke">Stroke
+           <input type="checkbox" id="Diabetes" name="disease[]" value="Diabetes">Diabetes
+           <br/>
+           <p></p>
+           <label for="Department">DEPARTMENT:</label>
+           <select id ="DEPT" name ="DEPT">
+           <option id="1" value="1">SELECT DEPT</option>
+           <option id="2" value="2">Emergency Department</option>
+           <option id ="Cardiology" value="Cardiology">Cardiology</option>
+           <option id ="Neurology" value="Neurology">Neurology</option>
+           <option id ="Orthopedics" value="Orthopedics">AB+</option>
+           <option id ="Radiology" value="Radiology">Radiology</option>
+           
+           </select>
+           <br/>
+           <p></p>
+
+          <label for="Address">ADDRESS: </label>
+          <textarea id="add" name="add" placeholder="Address" required rows="4" cols="60">
+          </textarea>
+          <br/>
+          <input type="Submit" id="submit" name="submit">
+          </fieldset>
+
+    </form>
+</body>
+</html>
